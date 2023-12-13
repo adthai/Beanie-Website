@@ -1,1 +1,161 @@
+<!DOCTYPE html>
+<!-- Andy Thai, Thomas Lu 11/4/2023 
+HTML file, showcasing the home page of our stuffed animal shopping for our final
+project. This will include many features, including a search bar, filtering,
+and the list of stuffed animal with a description for each animal respectively.
+-->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title> Stuffies </title>
+    <meta name="viewport" content="width=device-width">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <script src="index.js">
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap"
+    rel="stylesheet">
+  </head>
 
+  <body>
+    <!-- nav bar -->
+    <section id="heading">
+      <h1 id="home-button"> BEANIES <br> .NET </h1>
+      <section id="navigation">
+        <section class="links">
+          <section id="categories">
+            <div class="dropdown">
+              <button id="parent-link">Categories</button>
+              <div class="dropdown-content">
+                <button class="link" id="animal">Animal</button>
+                <button class="link" id="aquatic">Aquatic</button>
+                <button class="link" id="bear">Bear</button>
+                <button class="link" id="licensed">Licensed</button>
+                <button class="link" id="rodent">Rodent</button>
+              </div>
+            </div>
+          </section>
+          <section>
+            <button id="history" class="link"> Your Transactions </button>
+          </section>
+        </section>
+        <section class="links">
+          <form id="search-box">
+            <input id="search-term" type="text" placeholder="Search here">
+            <button id="search-btn" disabled>Search</button>
+          </form>
+          <section id="cart">
+            <button id="cart-container">
+              <img class="icons" src="images/shopping-cart.png" alt="the shopping cart">
+              Cart
+            </button>
+          </section>
+          <button id="login-button">
+            Login
+          </button>
+          <button id="signup-button">
+            Sign Up
+          </button>
+        </section>
+      </section>
+    </section>
+    <section id="homepage">
+      <section id="category">
+        <div class="category-heading">
+          <h2> Showing results for: <span id="search-qry"> All </span> </h2>
+          <button id="toggle-views">Toggle Views</button>
+        </div>
+        <div id="list-container" class="grid">
+        </div>
+      </section>
+    </section>
+
+    <!-- detail view -->
+    <section id="detailed-view" class="hidden">
+    </section>
+
+    <!-- cart view -->
+    <section id="cart-page" class="hidden">
+      <h2> Your Cart of Items: </h2>
+      <section id="cart-display">
+      </section>
+      <h2 id="clear-message" class="hidden"> Your Shopping Cart is Cleared </h2>
+      <h2 id="total"></h2>
+      <button id="clear-order"> Clear </button>
+      <button id="confirm-order"> Confirm Order </button>
+    </section>
+
+    <!-- checkout view -->
+    <section id="checkout-page" class="hidden">
+      <h2> Please check your order. To change, click "BEANIE.NET" to start over.</h2>
+      <section id="checkout-display">
+      </section>
+      <button id="submit-order">Submit Transaction</button>
+    </section>
+
+    <!-- confirmation view -->
+    <section id="confirmation-page" class="hidden">
+      <h2> Thank you for shopping with us!  Your confirmation code:
+        <span id="confirmation-code"></span>
+      </h2>
+      <h3> Please redirect yourself to the homepage by clicking "BEANIES.NET"</h3>
+      <h3 id="error-message"> </h3>
+    </section>
+
+    <!-- transactions history page -->
+    <section id="transaction-page" class="hidden">
+      <h2> Your history of transactions: </h2>
+      <section id="list-history">
+      </section>
+    </section>
+
+    <section id="login-page">
+      <h2>Please Login</h2>
+      <form id="login">
+        <div>
+          <label for="username"> Username <input id="username" type="text"> </label>
+        </div>
+        <div>
+          <label for="password"> Password <input id="password" type="password"> </label>
+        </div>
+        <button  id="submit-btn" class="submit"> Log In </button>
+        <p id="login-response"> </p>
+      </form>
+    </section>
+
+    <!-- Sign Up Page -->
+    <section id="signup-page" class="hidden">
+      <h2>Please Sign Up</h2>
+      <form id="signup">
+        <div>
+          <label for="name-input"> Name:
+            <input id="name-input" type="text">
+          </label>
+        </div>
+        <div>
+          <label for="email-input"> Email:
+            <input id="email-input" type="text" >
+          </label>
+        </div>
+        <div>
+          <label for="username-input"> Username:
+            <input id="username-input" type="text" >
+          </label>
+        </div>
+        <div>
+          <label for="password-input"> Password:
+            <input id="password-input" type="password">
+          </label>
+        </div>
+        <button id="signup-submit" class="submit"> Sign Up </button>
+        <p id="signup-response"> </p>
+      </form>
+    </section>
+
+    <!-- Cart -->
+    <section id="checkout" class="hidden">
+      <h2>Your Shopping Cart is Empty</h2>
+      <section id="checkout-content">
+      </section>
+    </section>
+  </body>
+</html>
