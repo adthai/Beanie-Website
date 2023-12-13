@@ -1,14 +1,13 @@
 /**
  * Andy Thai, Thomas Lu
  * 11/4/2023
- * Section AE: Allison Ho, Kevin Wu
  * JS file, showcasing the initialization of various buttons throughout the
- * website, forms for users to add information to login or sign up in, and a
+ * website, forms for users to add information to log in or sign up, and a
  * search and filtering option for users to minimize results. In terms of each
- * item, users can click on each item in detail. Add to cart features are also
+ * item, users can click on each item in detail. Add-to-cart features are also
  * added, with results being shown in a cart. Users can remove items, if necessary,
  * before confirming and submitting the transaction with a code generated as
- * receipt. Users can see their transactions history based on their code.
+ * receipt. Users can see their transaction history based on their code.
  */
 
 "use strict";
